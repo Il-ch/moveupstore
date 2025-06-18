@@ -10,7 +10,7 @@
     position: relative;
     bottom: 85px;
     height: 100vh;
-    background: url(/resources/MainBackground.webp);
+    background: url(../resources/MainBackground.webp);
     background-position: center;
     background-size: cover;
 }
