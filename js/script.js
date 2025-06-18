@@ -270,7 +270,6 @@ function updateCategoryCard(itemKey, lang, isMobile) {
         cardElements.sizes.src = item.sizesImage;
         cardElements.sizes.style.display = 'block';
     } else {
-        cardElements.sizes.src = '';
         cardElements.sizes.style.display = 'none';
     }
 }
