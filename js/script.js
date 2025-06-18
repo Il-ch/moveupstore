@@ -265,6 +265,14 @@ function updateCategoryCard(itemKey, lang, isMobile) {
     cardElements.description.textContent = descTranslation[lang];
     cardElements.tags.textContent = tagsTranslation[lang];
     cardElements.sizes.src = item.sizesImage;
+
+    if (item.sizesImage) {
+        cardElements.sizes.src = item.sizesImage;
+        cardElements.sizes.style.display = 'block';
+    } else {
+        cardElements.sizes.src = '';
+        cardElements.sizes.style.display = 'none';
+    }
 }
 
 /* Додавання слухачів для елементів категорій */
