@@ -380,6 +380,8 @@
     .about-us__title {
         font-size: 23px;
         margin-bottom: 10px;
+        text-align: center;
+        text-indent: 0em;
     }
 
     .about-us__list-icon {
