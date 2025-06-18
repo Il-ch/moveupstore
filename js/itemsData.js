@@ -2,148 +2,148 @@
 const itemsData = {
     tshirt: {
         name: 'Футболки',
-        image: '/resources/categories/tshirt.webp',
+        image: '../resources/categories/tshirt.webp',
         description: 'Зручні та практичні футболки, які ідеально підходять для повсякденного носіння. Виготовлені з якісних матеріалів для комфортного використання в будь-яку пору року. Різноманітність кольорів і розмірів дозволяє підібрати оптимальний варіант.',
         tags: 'Наявність: кольори - білий, чорний, сірий, хакі, синій, жовтий; розміри - XS, S, M, L, XL, XXL',
-        sizesImage: '/resources/sizes/tshirt-sizes.webp'
+        sizesImage: '../resources/sizes/tshirt-sizes.webp'
     },
     tanktop: {
         name: 'Майки',
-        image: '/resources/categories/tanktop.webp',
+        image: '../resources/categories/tanktop.webp',
         description: 'Легкі та дихаючі майки, створені для активного способу життя. Підходять для занять спортом та повсякденного використання в теплу пору року. Виготовлені з м’яких матеріалів для максимального комфорту.',
         tags: 'Наявність: кольори - білий, чорний, сірий, хакі, синій, жовтий; розміри - XS, S, M, L, XL, XXL',
-        sizesImage: '/resources/sizes/tanktop-sizes.webp'
+        sizesImage: '../resources/sizes/tanktop-sizes.webp'
     },
     hoodie: {
         name: 'Толстовки',
-        image: '/resources/categories/hoodie.webp',
+        image: '../resources/categories/hoodie.webp',
         description: 'Теплі та зручні толстовки, ідеальні для тренувань і щоденного носіння. Виготовлені з м’якого матеріалу, що забезпечує комфорт і збереження тепла. Має стильний дизайн та широкий вибір кольорів.',
         tags: 'Наявність: кольори - білий, чорний, синій, сірий, хакі; розміри - XS, S, M, L, XL, XXL',
-        sizesImage: '/resources/sizes/hoodie-sizes.webp'
+        sizesImage: '../resources/sizes/hoodie-sizes.webp'
     },
     windbreaker: {
         name: 'Вітровки',
-        image: '/resources/categories/windbreaker2.webp',
+        image: '../resources/categories/windbreaker2.webp',
         description: 'Легкі вітровки, які надійно захищають від вітру і негоди. Ідеальні для спортивних занять на свіжому повітрі. Матеріали забезпечують водовідштовхувальні властивості та хорошу вентиляцію.',
         tags: 'Наявність: кольори - білий, чорний, синій, сірий, хакі; розміри - XS, S, M, L, XL, XXL',
-        sizesImage: '/resources/sizes/windbreaker-sizes.webp'
+        sizesImage: '../resources/sizes/windbreaker-sizes.webp'
     },
     tops: {
         name: 'Топи',
-        image: '/resources/categories/tops.webp',
+        image: '../resources/categories/tops.webp',
         description: 'Стильні та зручні топи для активного способу життя і тренувань. Легкі і дихаючі матеріали забезпечують комфорт під час фізичних навантажень. Підходять для різних видів спорту і повсякденного носіння.',
         tags: 'Наявність: кольори - білий, чорний, рожевий, сірий, хакі; розміри - XS, S, M, L, XL',
-        sizesImage: '/resources/sizes/tops-sizes.webp'
+        sizesImage: '../resources/sizes/tops-sizes.webp'
     },
     leggings: {
         name: 'Легінси',
-        image: '/resources/categories/leggings.webp',
+        image: '../resources/categories/leggings.webp',
         description: 'Еластичні легінси, що підтримують рухи під час тренувань і фітнесу. Виготовлені з дихаючих та швидковисихаючих матеріалів. Забезпечують комфорт та свободу рухів у будь-якій активності.',
         tags: 'Наявність: кольори - білий, чорний, бордовий, сірий, хакі; розміри - XS, S, M, L, XL',
-        sizesImage: '/resources/sizes/leggings-sizes.webp'
+        sizesImage: '../resources/sizes/leggings-sizes.webp'
     },
     shorts: {
         name: 'Шорти',
-        image: '/resources/categories/shorts.webp',
+        image: '../resources/categories/shorts.webp',
         description: 'Зручні спортивні шорти для тренувань та активного відпочинку. Легкі і дихаючі, забезпечують свободу рухів. Підходять для різних видів спорту та повсякденного використання.',
         tags: 'Наявність: кольори - чорний, сірий, синій, хакі; розміри - XS, S, M, L, XL, XXL',
-        sizesImage: '/resources/sizes/shorts-sizes.webp'
+        sizesImage: '../resources/sizes/shorts-sizes.webp'
     },
     pants: {
         name: 'Штани',
-        image: '/resources/categories/pants.webp',
+        image: '../resources/categories/pants.webp',
         description: 'Спортивні штани для комфортних тренувань і повсякденного носіння. Виготовлені з міцних та дихаючих матеріалів. Підходять для активного відпочинку і спортивних занять.',
         tags: 'Наявність: кольори - білий, чорний, темносиній, сірий; розміри - XS, S, M, L, XL, XXL',
-        sizesImage: '/resources/sizes/pants-sizes.webp'
+        sizesImage: '../resources/sizes/pants-sizes.webp'
     },
     swimwear: {
         name: 'Купальна білизна',
-        image: '/resources/categories/swimwear.webp',
+        image: '../resources/categories/swimwear.webp',
         description: 'Якісна купальна білизна для комфортного плавання і відпочинку на воді. Виготовлена з швидковисихаючих матеріалів. Пропонує стильний дизайн і гарне прилягання.',
         tags: 'Наявність: кольори - білий, синій, чорний, бірюзовий; розміри - XS, S, M, L, XL',
-        sizesImage: '/resources/sizes/swimwear-sizes.webp'
+        sizesImage: '../resources/sizes/swimwear-sizes.webp'
     },
     runningShoes: {
         name: 'Бігові кросівки',
-        image: '/resources/categories/runningShoes.webp',
+        image: '../resources/categories/runningShoes.webp',
         description: 'Легкі кросівки, що забезпечують максимальну підтримку і амортизацію під час бігу. Ідеальні для бігунів будь-якого рівня. Виготовлені з дихаючих матеріалів для комфорту стопи.',
         tags: 'Наявність: розміри - 35–47',
     },
     basketballShoes: {
         name: 'Баскетбольні кросівки',
-        image: '/resources/categories/basketballShoes.webp',
+        image: '../resources/categories/basketballShoes.webp',
         description: 'Спеціальні кросівки для баскетболістів, які забезпечують підтримку і амортизацію. Надійні під час активних рухів і стрибків. Має зручну фіксацію ноги.',
         tags: 'Наявність: розміри - 38–47',
     },
     footballCleats: {
         name: 'Футбольні бутси',
-        image: '/resources/categories/footballCleats.webp',
+        image: '../resources/categories/footballCleats.webp',
         description: 'Футбольні бутси з підвищеною зчіпкою для впевненості на полі. Забезпечують комфорт і підтримку під час гри. Виготовлені для тривалого використання у спортивних умовах.',
         tags: 'Наявність: розміри - 35–47',
     },
     trainingShoes: {
         name: 'Тренувальні кросівки',
-        image: '/resources/categories/trainingShoes.webp',
+        image: '../resources/categories/trainingShoes.webp',
         description: 'Універсальні кросівки для різних видів тренувань і активностей. Комфортні і міцні, з гарною амортизацією. Підходять для залу та вуличних занять спортом.',
         tags: 'Наявність: кольори - сірий, білий, чорний; розміри - 36–46',
     },
     slippers: {
         name: 'Спортивні капці',
-        image: '/resources/categories/slippers.webp',
+        image: '../resources/categories/slippers.webp',
         description: 'Комфортні капці для дому і відпочинку після тренувань. Легкі і дихаючі, забезпечують зручність у використанні. Ідеальні для розслаблення та відновлення.',
         tags: 'Наявність: кольори - чорний, синій; розміри - 35–45',
     },
     socks: {
         name: 'Шкарпетки',
-        image: '/resources/categories/socks.webp',
+        image: '../resources/categories/socks.webp',
         description: 'Дихаючі і зручні шкарпетки для спортивних занять. Забезпечують комфорт і підтримку під час активності. Виготовлені з якісних матеріалів, що швидко сохнуть.',
         tags: 'Наявність: кольори - білий, чорний, сірий; розміри - 35–46',
     },
     headbands: {
         name: 'Пов\'язки на голову',
-        image: '/resources/categories/headbands.webp',
+        image: '../resources/categories/headbands.webp',
         description: 'Пов\'язки, що утримують волосся і забезпечують комфорт під час тренувань. Легкі і зручні, не заважають рухам. Доступні в кількох кольорах для вибору.',
         tags: 'Наявність: кольори - чорний, рожевий, сірий',
     },
     wristbands: {
         name: 'Пов\'язки на зап\'ястя',
-        image: '/resources/categories/wristbands.webp',
+        image: '../resources/categories/wristbands.webp',
         description: 'Пов\'язки для підтримки зап\'ястя та вбирання поту під час активних занять. Забезпечують додатковий комфорт і захист. Легкі та міцні, доступні у різних кольорах.',
         tags: 'Наявність: кольори - чорний, білий, червоний',
     },
     kneePads: {
         name: 'Наколінники',
-        image: '/resources/categories/kneePads.webp',
+        image: '../resources/categories/kneePads.webp',
         description: 'Захисні наколінники для безпеки під час тренувань і ігор. Забезпечують комфорт і підтримку колінних суглобів. Виготовлені з міцних матеріалів для тривалого використання.',
         tags: 'Наявність: кольори - чорний, сірий; розміри - M, L, XL',
     },
     elbowPads: {
         name: 'Налокітники',
-        image: '/resources/categories/elbowPads.webp',
+        image: '../resources/categories/elbowPads.webp',
         description: 'Налокітники для підтримки і захисту під час фізичних навантажень. Комфортні і надійні, підходять для різних видів спорту. Забезпечують безпеку та свободу рухів.',
         tags: 'Наявність: кольори - чорний, синій; розміри - S, M, L',
     },
     weightliftingBelts: {
         name: 'Пояси для важкої атлетики',
-        image: '/resources/categories/weightliftingBelts.webp',
+        image: '../resources/categories/weightliftingBelts.webp',
         description: 'Пояси для надійної підтримки спини під час важких підйомів. Виготовлені з міцних матеріалів, що забезпечують стабільність. Важливий аксесуар для спортсменів і шанувальників важкої атлетики.',
         tags: 'Наявність: кольори - чорний, коричневий; розміри - M, L, XL',
     },
     sportsBags: {
         name: 'Спортивні сумки',
-        image: '/resources/categories/sportsBags.webp',
+        image: '../resources/categories/sportsBags.webp',
         description: 'Просторі та міцні сумки для зберігання спортивного спорядження. Зручні для перенесення речей на тренування або в поїздки. Доступні в різних кольорах і об’ємах.',
         tags: 'Наявність: кольори - чорний, сірий, червоний; об\'єм - 30л, 40л, 50л',
     },
     sportsBackpacks: {
         name: 'Спортивні рюкзаки',
-        image: '/resources/categories/sportsBackpacks.webp',
+        image: '../resources/categories/sportsBackpacks.webp',
         description: 'Зручні рюкзаки для перенесення речей під час тренувань і походів. Ергономічний дизайн і міцні матеріали забезпечують комфорт і довговічність. Пропонуються в різних кольорах і об’ємах.',
         tags: 'Наявність: кольори - чорний, синій, зелений; об\'єм - 20л, 30л, 40л',
     },
     fitnessMats: {
         name: 'Килимки для фітнесу',
-        image: '/resources/categories/fitnessMats.webp',
+        image: '../resources/categories/fitnessMats.webp',
         description: 'Килимки для комфортних вправ і розтяжок під час тренувань. Виготовлені з якісних матеріалів, що забезпечують зчеплення і амортизацію. Доступні у різних кольорах і розмірах.',
         tags: 'Наявність: кольори - синій, рожевий, сірий; розміри - 180x60 см, 200x70 см',
     }
