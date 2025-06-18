@@ -21,14 +21,53 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    /* Слайдер акцій */
-    const sliderInputs = document.querySelectorAll('input[name="slider_promotions"]');
-    let currentIndex = 0;
-    setInterval(() => {
-        sliderInputs.forEach(input => input.checked = false);
-        sliderInputs[currentIndex].checked = true;
+/* Слайдер акцій */
+const sliderInputs = document.querySelectorAll('input[name="slider_promotions"]');
+let currentIndex = 0;
+
+// Автоперемикання
+setInterval(() => {
+    sliderInputs.forEach(input => input.checked = false);
+    sliderInputs[currentIndex].checked = true;
+    currentIndex = (currentIndex + 1) % sliderInputs.length;
+}, 5000);
+
+// Свайпи
+const slider = document.querySelector('.promotions-list');
+let touchStartX = 0;
+let touchEndX = 0;
+
+slider.addEventListener('touchstart', e => {
+    touchStartX = e.changedTouches[0].screenX;
+}, false);
+
+slider.addEventListener('touchend', e => {
+    touchEndX = e.changedTouches[0].screenX;
+    handleSwipe();
+}, false);
+
+function handleSwipe() {
+    const threshold = 50;
+
+    if (touchEndX < touchStartX - threshold) {
         currentIndex = (currentIndex + 1) % sliderInputs.length;
-    }, 5000);
+        updateSlider();
+    } else if (touchEndX > touchStartX + threshold) {
+        currentIndex = (currentIndex - 1 + sliderInputs.length) % sliderInputs.length;
+        updateSlider();
+    }
+}
+
+function updateSlider() {
+    sliderInputs.forEach(input => input.checked = false);
+    sliderInputs[currentIndex].checked = true;
+}
+
+sliderInputs.forEach((input, index) => {
+    input.addEventListener('change', () => {
+        currentIndex = index;
+    });
+});
 
     /* Логіка прокрутки логотипів */
     const track = document.getElementById('brandsTrack');
@@ -62,7 +101,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     });
                 }, 300);
             } else {
-                setTimeout(scrollNext, 500);
+                setTimeout(scrollNext, 1000);
             }
         }
 
