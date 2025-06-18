@@ -237,6 +237,9 @@ function updateCategoryCard(itemKey, lang, isMobile) {
         return;
     }
 
+    const placeholderWebP = 'resources/sizes/placeholder.webp';
+
+
     const cardElements = {
         image: document.querySelector('.category-card__image'),
         name: document.querySelector('.category-card__name'),
@@ -264,13 +267,13 @@ function updateCategoryCard(itemKey, lang, isMobile) {
     cardElements.name.textContent = nameTranslation[lang];
     cardElements.description.textContent = descTranslation[lang];
     cardElements.tags.textContent = tagsTranslation[lang];
-    cardElements.sizes.src = item.sizesImage;
 
-    if (item.sizesImage) {
-        cardElements.sizes.src = item.sizesImage;
-        cardElements.sizes.style.display = 'block';
+    if (!item.sizesImage) {
+        cardElements.sizes.src = placeholderWebP;
+        cardElements.sizes.classList.add('placeholder');
     } else {
-        cardElements.sizes.style.display = 'none';
+        cardElements.sizes.src = item.sizesImage;
+        cardElements.sizes.classList.remove('placeholder');
     }
 }
 
