@@ -188,6 +188,7 @@ function renderCategories(selectedCategory) {
                 <span class="categories-list__title" data-i18n-key="category-${item.itemKey}-name">${nameTranslation[lang]}</span>
             `;
 
+
             if (isMobile) {
                 const descTranslation = translations[`category-${item.itemKey}-description`];
                 const tagsTranslation = translations[`category-${item.itemKey}-tags`];
@@ -195,6 +196,8 @@ function renderCategories(selectedCategory) {
                     console.warn(`Missing translations for ${item.itemKey}`);
                     return;
                 }
+
+                const placeholderWebP = 'resources/sizes/placeholder.webp';
 
                 html = `
                     <div class="category-main">
@@ -207,7 +210,11 @@ function renderCategories(selectedCategory) {
                             <span class="category-details__name" data-i18n-key="category-${item.itemKey}-name">${nameTranslation[lang]}</span>
                             <span class="category-details__info" data-i18n-key="category-${item.itemKey}-description">${descTranslation[lang]}</span>
                             <span class="category-details__tags" data-i18n-key="category-${item.itemKey}-tags">${tagsTranslation[lang]}</span>
-                            <img src="${itemData.sizesImage}" alt="" class="category-details__sizes">
+                            <img 
+                                src="${itemData.sizesImage ? itemData.sizesImage : placeholderWebP}" 
+                                alt="" 
+                                class="category-details__sizes${!itemData.sizesImage ? ' placeholder' : ''}"
+                                >
                         </div>
                     </div>
                 `;
