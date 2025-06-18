@@ -2,52 +2,52 @@
 const itemsData = {
     tshirt: {
         name: 'Футболки',
-        image: '../resources/categories/tshirt.webp',
+        image: 'resources/categories/tshirt.webp',
         description: 'Зручні та практичні футболки, які ідеально підходять для повсякденного носіння. Виготовлені з якісних матеріалів для комфортного використання в будь-яку пору року. Різноманітність кольорів і розмірів дозволяє підібрати оптимальний варіант.',
         tags: 'Наявність: кольори - білий, чорний, сірий, хакі, синій, жовтий; розміри - XS, S, M, L, XL, XXL',
-        sizesImage: '../resources/sizes/tshirt-sizes.webp'
+        sizesImage: 'resources/sizes/tshirt-sizes.webp'
     },
     tanktop: {
         name: 'Майки',
-        image: '../resources/categories/tanktop.webp',
+        image: 'resources/categories/tanktop.webp',
         description: 'Легкі та дихаючі майки, створені для активного способу життя. Підходять для занять спортом та повсякденного використання в теплу пору року. Виготовлені з м’яких матеріалів для максимального комфорту.',
         tags: 'Наявність: кольори - білий, чорний, сірий, хакі, синій, жовтий; розміри - XS, S, M, L, XL, XXL',
-        sizesImage: '../resources/sizes/tanktop-sizes.webp'
+        sizesImage: 'resources/sizes/tanktop-sizes.webp'
     },
     hoodie: {
         name: 'Толстовки',
-        image: '../resources/categories/hoodie.webp',
+        image: 'resources/categories/hoodie.webp',
         description: 'Теплі та зручні толстовки, ідеальні для тренувань і щоденного носіння. Виготовлені з м’якого матеріалу, що забезпечує комфорт і збереження тепла. Має стильний дизайн та широкий вибір кольорів.',
         tags: 'Наявність: кольори - білий, чорний, синій, сірий, хакі; розміри - XS, S, M, L, XL, XXL',
-        sizesImage: '../resources/sizes/hoodie-sizes.webp'
+        sizesImage: 'resources/sizes/hoodie-sizes.webp'
     },
     windbreaker: {
         name: 'Вітровки',
-        image: '../resources/categories/windbreaker2.webp',
+        image: 'resources/categories/windbreaker2.webp',
         description: 'Легкі вітровки, які надійно захищають від вітру і негоди. Ідеальні для спортивних занять на свіжому повітрі. Матеріали забезпечують водовідштовхувальні властивості та хорошу вентиляцію.',
         tags: 'Наявність: кольори - білий, чорний, синій, сірий, хакі; розміри - XS, S, M, L, XL, XXL',
-        sizesImage: '../resources/sizes/windbreaker-sizes.webp'
+        sizesImage: 'resources/sizes/windbreaker-sizes.webp'
     },
     tops: {
         name: 'Топи',
-        image: '../resources/categories/tops.webp',
+        image: 'resources/categories/tops.webp',
         description: 'Стильні та зручні топи для активного способу життя і тренувань. Легкі і дихаючі матеріали забезпечують комфорт під час фізичних навантажень. Підходять для різних видів спорту і повсякденного носіння.',
         tags: 'Наявність: кольори - білий, чорний, рожевий, сірий, хакі; розміри - XS, S, M, L, XL',
-        sizesImage: '../resources/sizes/tops-sizes.webp'
+        sizesImage: 'resources/sizes/tops-sizes.webp'
     },
     leggings: {
         name: 'Легінси',
-        image: '../resources/categories/leggings.webp',
+        image: 'resources/categories/leggings.webp',
         description: 'Еластичні легінси, що підтримують рухи під час тренувань і фітнесу. Виготовлені з дихаючих та швидковисихаючих матеріалів. Забезпечують комфорт та свободу рухів у будь-якій активності.',
         tags: 'Наявність: кольори - білий, чорний, бордовий, сірий, хакі; розміри - XS, S, M, L, XL',
-        sizesImage: '../resources/sizes/leggings-sizes.webp'
+        sizesImage: 'resources/sizes/leggings-sizes.webp'
     },
     shorts: {
         name: 'Шорти',
-        image: '../resources/categories/shorts.webp',
+        image: 'resources/categories/shorts.webp',
         description: 'Зручні спортивні шорти для тренувань та активного відпочинку. Легкі і дихаючі, забезпечують свободу рухів. Підходять для різних видів спорту та повсякденного використання.',
         tags: 'Наявність: кольори - чорний, сірий, синій, хакі; розміри - XS, S, M, L, XL, XXL',
-        sizesImage: '../resources/sizes/shorts-sizes.webp'
+        sizesImage: 'resources/sizes/shorts-sizes.webp'
     },
     pants: {
         name: 'Штани',
